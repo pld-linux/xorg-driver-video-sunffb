@@ -1,5 +1,5 @@
 Summary:	X.org video driver for Sun Creator, Creator 3D and Elite 3D video cards
-Summary(pl.UTF-8):   Sterownik obrazu X.org dla kart graficznych Sun Creator, Creator 3D i Elite 3D
+Summary(pl.UTF-8):	Sterownik obrazu X.org dla kart graficznych Sun Creator, Creator 3D i Elite 3D
 Name:		xorg-driver-video-sunffb
 Version:	1.1.0
 Release:	0.1
