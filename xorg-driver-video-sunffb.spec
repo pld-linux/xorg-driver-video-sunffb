@@ -1,25 +1,22 @@
 Summary:	X.org video driver for Sun Creator, Creator 3D and Elite 3D video cards
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla kart graficznych Sun Creator, Creator 3D i Elite 3D
 Name:		xorg-driver-video-sunffb
-Version:	1.1.0
-Release:	4
+Version:	1.2.0
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-sunffb-%{version}.tar.bz2
-# Source0-md5:	dee23564c0d8069f52c7cd29c78be667
-Patch0:		%{name}-nodri.patch
+# Source0-md5:	816842de26bce8a935f3c9c3cfedbc42
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	Mesa-libGL-devel
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	libdrm-devel >= 2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-proto-fontsproto-devel
 BuildRequires:	xorg-proto-randrproto-devel
 BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-xextproto-devel
-BuildRequires:	xorg-proto-xf86driproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRequires:	xorg-xserver-server-devel >= 1.0.99.901
 BuildRequires:  rpmbuild(macros) >= 1.389
@@ -40,7 +37,6 @@ Elite 3D.
 
 %prep
 %setup -q -n xf86-video-sunffb-%{version}
-%patch0 -p1
 
 %build
 %{__libtoolize}
